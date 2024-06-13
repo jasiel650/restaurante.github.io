@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="https://formsubmit.co">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #800020;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #800020;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #6a0019;
+        }
+
+        .form-txt {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .form-txt button {
+            background-color: transparent;
+            border: none;
+            color: #800020;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .form-txt button:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #800020;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Teléfono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Enviar">
+
+            <div class="form-txt">
+                <button type="button" onclick="abrirVentana()">Política de Privacidad</button>
+                <button type="button" onclick="abrirVentana2()">Términos y Condiciones</button>
+            </div>
+        </form>
+        <footer>
+            <a href="E:\restaurante\index.html">Inicio</a>
+        </footer>
+    </div>
+
+    <script>
+        function abrirVentana() {
+            var ventana = window.open("", "_blank", "width=600,height=400");
+            ventana.document.write("<!DOCTYPE html>");
+            ventana.document.write("<html>");
+            ventana.document.write("<head>");
+            ventana.document.write("<title>Política de Privacidad</title>");
+            ventana.document.write("</head>");
+            ventana.document.write("<body>");
+            ventana.document.write("<p>En [Nombre de la Empresa], estamos comprometidos con la protección y privacidad de tu información personal. Esta política de privacidad describe cómo recopilamos, utilizamos y protegemos la información que nos proporcionas cuando utilizas nuestro formulario de contacto en nuestro sitio web. Información Recopilada: Nombre completo, Dirección de correo electrónico, Número de teléfono (opcional). Uso de la Información: La información que recopilamos se utiliza únicamente para responder a tus consultas y proporcionarte el mejor servicio posible. No compartiremos, venderemos ni alquilaremos tu información personal a terceros sin tu consentimiento, a menos que la ley nos obligue a hacerlo. Seguridad de la Información: Nos comprometemos a proteger la seguridad de tu información personal. Utilizamos medidas de seguridad físicas, electrónicas y administrativas para proteger contra el acceso no autorizado, la alteración y la divulgación de tu información. Acceso y Control de tu Información: Tienes derecho a acceder, corregir y eliminar la información personal que nos has proporcionado. Si deseas ejercer estos derechos o tienes alguna pregunta sobre nuestra política de privacidad, no dudes en ponerte en contacto con nosotros a través de la información de contacto proporcionada en nuestro sitio web. Cambios en esta Política de Privacidad: Nos reservamos el derecho de actualizar o cambiar nuestra política de privacidad en cualquier momento. Cualquier cambio significativo será notificado en nuestro sitio web junto con la fecha de entrada en vigor de la nueva política. Al utilizar nuestro formulario de contacto, aceptas los términos de nuestra política de privacidad. Si no estás de acuerdo con esta política, por favor, abstente de utilizar nuestro formulario de contacto. Última actualización: [23/05/2024].</p>");
+            ventana.document.write("<button onclick='window.close()'>Cerrar</button>");
+            ventana.document.write("</body>");
+            ventana.document.write("</html>");
+        }
+
+        function abrirVentana2() {
+            var ventana = window.open("", "_blank", "width=600,height=400");
+            ventana.document.write("<!DOCTYPE html>");
+            ventana.document.write("<html>");
+            ventana.document.write("<head>");
+            ventana.document.write("<title>Términos y Condiciones</title>");
+            ventana.document.write("</head>");
+            ventana.document.write("<body>");
+            ventana.document.write("<p>Términos y Condiciones de Uso: Por favor, lee detenidamente estos términos y condiciones antes de utilizar nuestro formulario de contacto. Al acceder y utilizar este formulario, aceptas cumplir y estar sujeto a estos términos y condiciones. Si no estás de acuerdo con alguno de estos términos, por favor, abstente de utilizar nuestro formulario de contacto. Uso Apropiado: Nuestro formulario de contacto está destinado únicamente para uso personal o empresarial legítimo. Al utilizar este formulario, te comprometes a no utilizarlo para enviar contenido difamatorio, obsceno, ilegal, o de cualquier otra manera inapropiado. Nos reservamos el derecho de rechazar cualquier solicitud de contacto que consideremos inapropiada o que viole estos términos y condiciones. Exactitud de la Información: Al utilizar nuestro formulario de contacto, garantizas que toda la información que proporcionas es veraz, completa y precisa. Nos reservamos el derecho de verificar la información proporcionada y de tomar las medidas necesarias para corregir cualquier información incorrecta o falsa. Privacidad y Protección de Datos: El uso de nuestro formulario de contacto está sujeto a nuestra política de privacidad. Al utilizar este formulario, aceptas las prácticas de recopilación, uso y divulgación de información descritas en nuestra política de privacidad. Limitación de Responsabilidad: Nos esforzamos por garantizar que nuestro formulario de contacto esté disponible y funcione correctamente en todo momento. Sin embargo, no podemos garantizar la disponibilidad ininterrumpida o el funcionamiento sin errores de este formulario. En ningún caso seremos responsables por cualquier daño directo, indirecto, incidental, especial, o consecuente que surja del uso o la imposibilidad de utilizar nuestro formulario de contacto. Cambios en los Términos y Condiciones: Nos reservamos el derecho de actualizar o cambiar estos términos y condiciones en cualquier momento sin previo aviso. Los cambios entrarán en vigor inmediatamente después de su publicación en nuestro sitio web. Te recomendamos que revises periódicamente estos términos y condiciones para estar al tanto de cualquier cambio. Contacto: Si tienes alguna pregunta o inquietud sobre estos términos y condiciones, por favor contáctanos a través de la información de contacto proporcionada en nuestro sitio web.</p>");
+            ventana.document.write("<button onclick='window.close()'>Cerrar</button>");
+            ventana.document.write("</body>");
+            ventana.document.write("</html>");
+        }
+    </script>
+</body>
+</html>
